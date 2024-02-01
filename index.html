@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!-- Designined by CodingLab | www.youtube.com/codinglabyt -->
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <title> Sticky Navigation Bar | CodingLab </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<!--THIS IS OUR MAIN NEV-->
+
+<body>
+  <nav>
+    <div class="nav-content">
+      <div class="logo">
+        <a href="#">FUNNGROW</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Teen</a></li>
+        <li><a href="https://www.funngro.com/company">Company</a></li>
+        <li><a href="https://www.funngro.com/parent">Parents</a></li>
+        <li><a href="https://teenlancer.funngro.com/pages/login/">Login</a></li>
+        <li><a href="https://play.google.com/store/apps/details?id=com.wishbanc.funngro">App</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <!--THIS IS HOME WHERE WE HAVE OUR MAIN IMAGE-->
+  <main class="MAIN">
+    <section class="section-global">
+      <div class="padding-global">
+        <div class="container-large">
+          <div class="padding-section-medium">
+            <div class="home-header-grid">
+              <div class="home-header-left-wraper">
+                <h1>
+                  Earn Your
+                  <br>
+                  First Income
+                </h1>
+                <br><br><br>
+                <p>
+                  Real companies, real projects, real earnings and real money
+                  <br><br>
+                  Smart opportunities for the smart generation
+                </p>
+              </div>
+              <div class="home-header-right-wraper"><img src="images/63fe05934db7ce0d3580d0dd_Funngro.png" alt="idk">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+
+
+
+
+  <!--THIS IS STICKY NEV BAR WHICH OOCCUR WHEN WE SCROLLE-->
+  <div class="text">
+    <p>
+    <h2>FUNNGROW</h2>
+    <br>
+    <hr>
+    <br>
+    <a href="https://www.funngro.com/investors"><p>Home
+      About
+      Blogs
+      FAQs
+      Careers
+      Investors
+      Login
+      Contact Us
+      Privacy Policy
+      Terms & Conditions</p>
+    </a>
+
+    <br>
+    <p>Enable Smart Teenagers and Smart Companies to realize their full potentials. It’s fun to grow.</p>
+    <br>
+    <hr>
+    <br>
+    <p>Download our mobile App</p>
+    <br>
+    <div class="space">    <a href="https://play.google.com/store/apps/details?id=com.wishbanc.funngro">
+      <img src="images/playstore.png" alt="playstore" width="60px" height="60px">
+    </a>
+    <a href="https://apps.apple.com/in/app/funngro/id1579361075">
+      <img src="images/appstore.png" alt="appstore" width="60px" height="60px">
+    </a>
+  </div>
+  <br><hr><br>
+  ©All Copyrights reserved 2023 By <h5>FUNNGROW</h5>
+
+
+  </div>
+
+
+
+  <!--THIS IS JAVASCRIPT CODE-->
+  <script>
+    let nav = document.querySelector("nav");
+    window.onscroll = function () {
+      if (document.documentElement.scrollTop > 20) {
+        nav.classList.add("sticky");
+      } else {
+        nav.classList.remove("sticky");
+      }
+    }
+  </script>
+
+</body>
+
+</html>
